@@ -175,3 +175,5 @@
 .floating-whatsapp:hover,.home-page .floating-whatsapp:hover{background:#20c760;color:#083d25}
 .floating-whatsapp:focus-visible{outline:3px solid #075e54;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){.floating-whatsapp{transition:none;transform:none}}
+
+.review-avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
