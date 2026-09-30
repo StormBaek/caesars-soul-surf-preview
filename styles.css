@@ -224,3 +224,13 @@
 }
 @media(max-height:600px) and (min-width:761px){.home-new-hero{min-height:650px}}
 @media(max-width:760px){.review-prev{left:-16px}.review-next{right:-16px}}
+
+/* The experience cards explain the packages without requiring expansion. */
+.soft-card>div{display:flex;flex-direction:column;flex:1;min-width:0}
+.soft-card .soft-options{margin-top:auto;padding-top:14px;border-top:0}
+.soft-card .soft-option{padding:10px 0;border-top:1px solid #cadbde;border-bottom:0}
+.soft-card .soft-option>a{font-size:14px;font-weight:500;min-height:44px;text-decoration:underline;text-decoration-color:#a2bac0;text-underline-offset:4px}
+.soft-card .soft-option small{font-size:12px;margin-top:0}
+.soft-card h3{font-size:clamp(22px,2vw,26px)}
+.soft-card p{font-size:15px;line-height:1.6;margin-bottom:8px}
+@media(max-width:420px){.soft-card h3{font-size:25px}.soft-card p{font-size:16px}}
