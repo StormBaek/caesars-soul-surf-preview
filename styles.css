@@ -177,3 +177,50 @@
 @media(prefers-reduced-motion:reduce){.floating-whatsapp{transition:none;transform:none}}
 
 .review-avatar img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}
+
+/* Responsive finishing: content-driven heights and comfortable touch targets. */
+.home-hero-copy,.soft-card,.home-story-copy,.location-copy,.surf-moment-copy,.footer-inner>div{min-width:0}
+.home-new-hero{height:auto;min-height:min(88svh,900px);max-height:none}
+.home-hero-copy{padding-bottom:110px}
+.review-arrow{width:44px;height:44px}.review-prev{left:-22px}.review-next{right:-22px}
+.soft-card summary{min-height:44px}.soft-option>a{min-height:44px;align-items:center}
+.surf-video-caption>div{min-width:0}.surf-video-caption a{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;flex-shrink:0}
+.floating-whatsapp{bottom:calc(22px + env(safe-area-inset-bottom,0px));right:calc(22px + env(safe-area-inset-right,0px))}
+@media(min-width:1600px){.home-page .instagram-grid{max-width:1280px}.location-postcard .location-copy{padding-right:max(44px,calc((100vw - 1360px)/2))}}
+@media(min-width:761px) and (max-width:1000px){
+ .home-page .surf-memories{grid-template-columns:1fr;gap:30px}.memories-intro{text-align:center}.memories-intro>p:not(.eyebrow){max-width:480px;margin:auto}.memory-doodle{margin:20px auto 12px}.memories-note{transform:none}.memory-board{max-width:720px;margin:auto}.memory-controls{margin-top:10px}
+ .home-faq{gap:36px}.home-page .home-story-copy{padding:32px}.surf-moment-copy{padding:38px 28px}
+}
+@media(max-width:760px){
+ .home-new-hero{min-height:690px;min-height:max(650px,88svh);height:auto;max-height:none}
+ .home-new-hero h1{font-size:clamp(46px,12.8vw,64px);letter-spacing:-.055em}
+ .home-hero-copy{padding:42px 24px 96px}.home-hero-copy>p:not(.eyebrow){margin-top:22px}
+ .home-hero-foot{gap:16px;font-size:8px;align-items:end}.home-hero-foot>a{text-align:right;max-width:160px}
+ .home-page .home-wrap{padding-left:24px;padding-right:24px}.home-page .home-story{padding-left:0;padding-right:0}
+ .home-page .home-story-panel{grid-template-columns:1fr}.home-story-photo{min-height:0;aspect-ratio:5/4}
+ .home-page .home-story-copy{padding:32px 24px}.home-page .surf-moment{padding:0}
+ .home-page .reviews-heading h2{font-size:clamp(27px,7vw,34px)}
+ .home-page .location-postcard{margin:32px 0}.location-scene{min-height:460px}
+ .home-page .home-booking h2{font-size:clamp(30px,8vw,38px)}
+ .home-page .home-booking .button{max-width:100%;justify-content:center;text-align:center}
+ .floating-whatsapp{right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));min-width:50px;min-height:50px}
+ .footer-inner>div>a{min-height:44px;margin-bottom:0;display:flex;align-items:center}footer{padding-bottom:85px}
+}
+@media(max-width:540px){
+ .home-page .instagram-grid{grid-template-columns:1fr;gap:28px}.home-page .surf-video-wrap{aspect-ratio:4/3}
+ .home-page .surf-video-caption h3{font-size:21px}.home-page .surf-video-caption p{font-size:14px}.home-page .surf-play-label{font-size:11px}
+ .home-page .soft-price-note{font-size:12px}.soft-option small{font-size:12px}.soft-card summary{font-size:14px}
+ .home-story-actions{align-items:flex-start;flex-direction:column;gap:14px}
+ .home-page .home-story-actions .story-whatsapp{min-height:44px;font-size:14px}
+}
+@media(max-width:420px){
+ .soft-grid{grid-template-columns:1fr;gap:16px}.soft-photo{grid-column:auto;min-height:230px}.soft-card{min-height:0;padding:24px;gap:20px}.soft-card h3{font-size:25px}.soft-card p{font-size:16px}
+ .home-hero-actions{flex-direction:column;align-items:flex-start}.home-page .home-hero-actions .button{min-width:190px;justify-content:center}
+ .home-new-hero{min-height:720px}.home-hero-copy{padding-top:30px}
+ .memory-print>span{font-size:11px;min-height:48px;height:48px}.memory-board{gap:24px 14px;padding-left:4px;padding-right:4px}
+ .location-postcard .location-copy h2{font-size:30px}.coast-photo-note{font-size:22px}
+ .features{grid-template-columns:1fr}.offer-copy{padding:24px}.offer-photo{height:auto;aspect-ratio:4/3}
+ .contact-layout form{padding:22px}.contact-method a{font-size:22px}.footer-inner{gap:26px 18px}
+}
+@media(max-height:600px) and (min-width:761px){.home-new-hero{min-height:650px}}
+@media(max-width:760px){.review-prev{left:-16px}.review-next{right:-16px}}
