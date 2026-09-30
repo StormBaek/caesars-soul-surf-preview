@@ -162,3 +162,16 @@ if(floatingContact){
   heroObserver.observe(pageHero);
  }else floatingContact.classList.add('is-visible');
 }
+
+// Compact mobile choices; preserve the expanded desktop overview.
+const experienceCards=[...document.querySelectorAll('details.soft-card')];
+const compactExperiences=matchMedia('(max-width:760px)');
+function sizeExperienceCards(){experienceCards.forEach(card=>{card.open=!compactExperiences.matches;});}
+sizeExperienceCards();
+compactExperiences.addEventListener('change',sizeExperienceCards);
+experienceCards.forEach(card=>{
+ card.querySelector('summary').addEventListener('click',event=>{
+  if(!compactExperiences.matches){event.preventDefault();return;}
+  if(!card.open)experienceCards.forEach(other=>{if(other!==card)other.open=false;});
+ });
+});
