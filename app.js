@@ -101,7 +101,7 @@ if(memoryNext){
   const nextPhotos=photos.slice(nextPage*6,nextPage*6+6);
   try{
    await Promise.all(nextPhotos.map(p=>new Promise((resolve,reject)=>{
-    const image=new Image();image.onload=resolve;image.onerror=reject;image.src='/caesars-soul-surf-preview/media/memories/memory-'+p.file+'.jpg';
+    const image=new Image();image.onload=resolve;image.onerror=reject;image.src='/media/memories/memory-'+p.file+'.jpg';
    })));
    const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)').matches;
    const board=document.querySelector('.memory-board');
@@ -121,7 +121,7 @@ if(memoryNext){
       ],{duration:360,delay:i*90,fill:'forwards',easing:'cubic-bezier(.45,0,.8,.35)'});
       await peel.finished;
      }
-     link.href='/caesars-soul-surf-preview/media/memories/memory-'+p.file+'.jpg';
+     link.href='/media/memories/memory-'+p.file+'.jpg';
      link.setAttribute('aria-label','Open photo: '+p.alt);
      image.src=link.href;image.alt=p.alt;image.style.objectFit=p.fit||'cover';
      link.querySelector('span').textContent=p.caption;
