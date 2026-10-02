@@ -299,3 +299,9 @@
 @media (min-width:1025px) and (prefers-reduced-motion:no-preference){
  .original-home .hero-home{background-attachment:fixed}
 }
+
+/* Original full-screen desktop hero and discreet development credit. */
+@media (min-width:1025px){.original-home .hero-home{min-height:100vh}}
+.footer-bottom{flex-wrap:wrap}
+.site-credit a{text-decoration:underline;text-underline-offset:3px}
+.site-credit a:hover{color:#fff}
