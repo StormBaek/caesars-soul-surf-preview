@@ -294,3 +294,8 @@
 /* Keep the logo centered with Activism in the main navigation. */
 @media(min-width:761px){.desktop-nav{grid-template-columns:minmax(0,1fr) 210px minmax(0,1fr);gap:24px}.nav-links{display:flex;align-items:center;justify-content:space-evenly;gap:20px}.nav-links a{font-size:16px;letter-spacing:.07em;padding:12px 0;white-space:nowrap}.nav-links a:hover,.nav-links a[aria-current=page]{text-decoration:underline;text-underline-offset:9px;text-decoration-thickness:1px}}
 @media(min-width:761px) and (max-width:1000px){.desktop-nav{grid-template-columns:minmax(0,1fr) 165px minmax(0,1fr);gap:15px}.nav-links{gap:12px}.nav-links a{font-size:14px;letter-spacing:.02em}}
+
+/* Restore the original homepage's fixed ocean backdrop on desktop. */
+@media (min-width:1025px) and (prefers-reduced-motion:no-preference){
+ .original-home .hero-home{background-attachment:fixed}
+}
