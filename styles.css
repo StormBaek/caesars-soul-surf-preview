@@ -305,3 +305,4 @@
 .footer-bottom{flex-wrap:wrap}
 .site-credit a{text-decoration:underline;text-underline-offset:3px}
 .site-credit a:hover{color:#fff}
+.site-credit{flex-basis:100%;text-align:center}
